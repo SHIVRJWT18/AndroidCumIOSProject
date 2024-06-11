@@ -12,7 +12,7 @@ import AppiumTestPkg.AppiumTestBase;
 import io.appium.java_client.AppiumBy;
 
 
-public class TC02_VerifyWifiSettingTitleOfTestingAPK extends AppiumTestBase {
+public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference extends AppiumTestBase {
 	
 	public WebElement elem;
 	@Test

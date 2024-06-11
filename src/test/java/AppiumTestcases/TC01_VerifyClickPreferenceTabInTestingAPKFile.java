@@ -8,7 +8,7 @@ import AppiumTestPkg.AppiumTestBase;
 import io.appium.java_client.AppiumBy;
 
 
-public class TC01_VerifyClickPreferenceTabOfTestingAPK extends AppiumTestBase {
+public class TC01_VerifyClickPreferenceTabInTestingAPKFile extends AppiumTestBase {
 	
 	
 	@Test
