@@ -19,25 +19,30 @@ public class AppiumTestBase
 
 	public AndroidDriver adriver;
 	public AppiumDriverLocalService aservice;
+	public String appiumServerPort  = "http://192.168.1.38:4723/";
 
 	
 	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException, URISyntaxException
 	{
 		aservice = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-				.withIPAddress("192.168.1.43").usingPort(4723).build();
+				.withIPAddress("192.168.1.38").usingPort(4723).build();
 		
-		aservice.start();
+	//	aservice.start();
 		
 		UiAutomator2Options optn = new UiAutomator2Options();
 		
-		optn.setDeviceName("Pixel 8 API 31"); // Emulator Device Name
+	/*	optn.setDeviceName("Pixel 8 API 31"); // Emulator Device Name
 		optn.setApp("F:\\SHIV NEWSCRIPTS\\AppiumBasicProject\\src\\main\\java\\ConfigPkg\\ApiDemos-debug.apk");
+	*/	
+		optn.setDeviceName("Pixel 2 Orieo"); // Emulator Device Name
+		optn.setApp("F:\\SHIV NEWSCRIPTS\\AppiumBasicProject\\src\\main\\java\\ConfigPkg\\General-Store.apk");
+		
 		optn.setAutomationName("UiAutomator2");
 		optn.setPlatformName("ANDROID");
 		
 		
-		adriver = new AndroidDriver(new URI("http://192.168.1.43:4723").toURL(),optn);
+		adriver = new AndroidDriver(new URI(appiumServerPort).toURL(),optn);
 	
 	    adriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 	}

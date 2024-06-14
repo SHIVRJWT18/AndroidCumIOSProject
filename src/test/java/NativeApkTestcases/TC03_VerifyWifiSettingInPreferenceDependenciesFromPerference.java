@@ -1,4 +1,4 @@
-package AppiumTestcases;
+package NativeApkTestcases;
 
 
 import java.net.MalformedURLException;
@@ -12,7 +12,7 @@ import AppiumTestPkg.AppiumTestBase;
 import io.appium.java_client.AppiumBy;
 
 
-public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference extends AppiumTestBase {
+public class TC03_VerifyWifiSettingInPreferenceDependenciesFromPerference extends AppiumTestBase {
 	
 	public WebElement elem;
 	@Test
@@ -24,13 +24,15 @@ public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference
 		Go to PreferenceDependencies, then Check Wifi Click on Wifi Setting and Set Wifi Setting
 	  */ 
 	   
-		adriver.findElement(AppiumBy.accessibilityId("Preference")).click();
-		adriver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
+		elem = adriver.findElement(AppiumBy.accessibilityId("Preference"));
+		elem.click();
+		elem = adriver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']"));
+		elem.click();
 		elem = adriver.findElement(AppiumBy.className("android.widget.CheckBox"));
 		boolean flag = false;
 		if(elem.isSelected()==flag)
 		{
-			System.out.println("By default element is unchecked");
+			System.out.println("By default elem is unchecked");
 			
 			elem.click();
 			
@@ -41,17 +43,10 @@ public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference
 			Assert.fail("Element is checked by default");
 		}	
         elem =  adriver.findElement(By.xpath("//android.widget.TextView[@resource-id='android:id/title' and @text='WiFi settings']"));
-       
         elem.click();
-        
-        String actpopuptitle = adriver.findElement(By.className("android.widget.TextView")).getText();
-        
-        System.out.println("Actual Title: "+ actpopuptitle);
-        
-        String exppopuptitle = "WiFi settings";
-        
-        Assert.assertEquals(exppopuptitle, actpopuptitle, "Pop-up title is not matched");
-
+        elem = adriver.findElement(By.xpath("//android.widget.EditText[@resource-id='android:id/edit']"));
+        elem.sendKeys("Android Wifi");
+	    adriver.findElement(By.id("android:id/button1")).click();
 	
 	}
 

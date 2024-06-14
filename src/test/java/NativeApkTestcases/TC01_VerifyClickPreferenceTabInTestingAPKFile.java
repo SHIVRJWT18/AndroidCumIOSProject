@@ -1,4 +1,4 @@
-package AppiumTestcases;
+package NativeApkTestcases;
 
 
 import java.net.MalformedURLException;

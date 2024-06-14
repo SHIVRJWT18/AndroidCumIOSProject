@@ -67,6 +67,10 @@ public class AppiumBasePage
 
 	}
 	
+	public void UserStartAppActivity(String appActivity)
+	{
+	 jsExec.executeScript("mobile: startActivity",ImmutableMap.of("intent", appActivity));	
+	}
 	
 
 }
