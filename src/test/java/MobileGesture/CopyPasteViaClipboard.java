@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
-public class CopyPasteViaClipboard extends AppiumTestBase
+public class CopyPasteViaClipboard extends AndroidTestBase
 {
  @Test
 

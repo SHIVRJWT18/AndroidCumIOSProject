@@ -3,10 +3,10 @@ package MobileGesture;
 import org.openqa.selenium.DeviceRotation;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
-public class AndroidDeviceRotation extends AppiumTestBase
+public class AndroidDeviceRotation extends AndroidTestBase
 {
 
 	@Test

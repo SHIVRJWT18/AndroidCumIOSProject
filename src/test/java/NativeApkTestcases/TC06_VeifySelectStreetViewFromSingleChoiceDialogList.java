@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
-public class TC06_VeifySelectStreetViewFromSingleChoiceDialogList extends AppiumTestBase
+public class TC06_VeifySelectStreetViewFromSingleChoiceDialogList extends AndroidTestBase
 {
 	 /*TestCase:
       * Click on Apk File on the Emulator then Click on App. 

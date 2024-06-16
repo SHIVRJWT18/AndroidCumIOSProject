@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import AppiumLibPkg.AppiumBasePage;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 
-public class TC01_LoginToGenernalStoreAPK extends AppiumTestBase 
+public class TC01_LoginToGenernalStoreAPK extends AndroidTestBase 
 {
 
 	@Test

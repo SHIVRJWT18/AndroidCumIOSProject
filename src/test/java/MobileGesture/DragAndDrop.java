@@ -6,10 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import AppiumLibPkg.AppiumBasePage;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
-public class DragAndDrop extends AppiumTestBase 
+public class DragAndDrop extends AndroidTestBase 
 {
 
 	@Test

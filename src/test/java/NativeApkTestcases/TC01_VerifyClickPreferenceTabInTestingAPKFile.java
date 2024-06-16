@@ -4,11 +4,11 @@ package NativeApkTestcases;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import org.testng.annotations.Test;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
 
-public class TC01_VerifyClickPreferenceTabInTestingAPKFile extends AppiumTestBase {
+public class TC01_VerifyClickPreferenceTabInTestingAPKFile extends AndroidTestBase {
 	
 	
 	@Test

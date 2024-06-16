@@ -6,11 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import AppiumLibPkg.AppiumBasePage;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
 
-public class AndroidStartAppActivity extends AppiumTestBase 
+public class AndroidStartAppActivity extends AndroidTestBase 
 {
 
 	/*To Open APk Page directly without step by step navigation:

@@ -11,12 +11,12 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableMap;
 
 import AppiumLibPkg.AppiumBasePage;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
 
 
-public class LongPressGesture extends AppiumTestBase
+public class LongPressGesture extends AndroidTestBase
 {
     // In APK File, Click on views - Extendable List - 1. Custom Adapter - People Names <Long press on People Names>
 	@Test

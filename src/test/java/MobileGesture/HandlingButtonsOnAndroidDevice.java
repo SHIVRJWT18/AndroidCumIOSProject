@@ -3,12 +3,12 @@ package MobileGesture;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
-public class HandlingButtonsOnAndroidDevice extends AppiumTestBase 
+public class HandlingButtonsOnAndroidDevice extends AndroidTestBase 
 {
 
 	@Test

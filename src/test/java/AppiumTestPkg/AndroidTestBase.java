@@ -14,12 +14,12 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class AppiumTestBase 
+public class AndroidTestBase 
 {
 
 	public AndroidDriver adriver;
 	public AppiumDriverLocalService aservice;
-	public String appiumServerPort  = "http://192.168.1.38:4723/";
+	public String appiumServerPort  = "http://192.168.1.80:4723/";
 
 	
 	@BeforeClass
@@ -37,7 +37,7 @@ public class AppiumTestBase
 	*/	
 		optn.setDeviceName("Pixel 2 Orieo"); // Emulator Device Name
 		optn.setApp("F:\\SHIV NEWSCRIPTS\\AppiumBasicProject\\src\\main\\java\\ConfigPkg\\General-Store.apk");
-		
+				
 		optn.setAutomationName("UiAutomator2");
 		optn.setPlatformName("ANDROID");
 		

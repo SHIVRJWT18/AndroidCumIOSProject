@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 
-public class TC02_CaptureToastMessageForIncorrectLogin extends AppiumTestBase 
+public class TC02_CaptureToastMessageForIncorrectLogin extends AndroidTestBase 
 {
 
 	@Test

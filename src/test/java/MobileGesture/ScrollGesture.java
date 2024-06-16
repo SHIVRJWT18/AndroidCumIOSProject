@@ -3,10 +3,10 @@ package MobileGesture;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import AppiumLibPkg.AppiumBasePage;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 
 
-public class ScrollGesture extends AppiumTestBase
+public class ScrollGesture extends AndroidTestBase
 {
 
 	

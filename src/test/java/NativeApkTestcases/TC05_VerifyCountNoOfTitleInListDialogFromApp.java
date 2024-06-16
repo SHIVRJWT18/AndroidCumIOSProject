@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
-public class TC05_VerifyCountNoOfTitleInListDialogFromApp extends AppiumTestBase
+public class TC05_VerifyCountNoOfTitleInListDialogFromApp extends AndroidTestBase
 {
 	 /*TestCase:
       * Click on Apk File on the Emulator then Click on App. 

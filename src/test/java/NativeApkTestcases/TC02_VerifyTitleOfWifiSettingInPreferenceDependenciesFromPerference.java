@@ -8,11 +8,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import AppiumTestPkg.AppiumTestBase;
+import AppiumTestPkg.AndroidTestBase;
 import io.appium.java_client.AppiumBy;
 
 
-public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference extends AppiumTestBase {
+public class TC02_VerifyTitleOfWifiSettingInPreferenceDependenciesFromPerference extends AndroidTestBase {
 	
 	public WebElement elem;
 	@Test
